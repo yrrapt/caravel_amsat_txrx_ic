@@ -1,0 +1,111 @@
+v {xschem version=2.9.8 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -130 130 -130 {}
+L 4 -130 370 130 370 {}
+L 4 -130 -130 -130 370 {}
+L 4 130 -130 130 370 {}
+L 4 -150 -100 -130 -100 {}
+L 4 130 -100 150 -100 {}
+L 4 -150 -80 -130 -80 {}
+L 4 130 -80 150 -80 {}
+L 4 130 -60 150 -60 {}
+L 4 130 -40 150 -40 {}
+L 4 -150 -30 -130 -30 {}
+L 4 130 0 150 0 {}
+L 4 -150 -10 -130 -10 {}
+L 4 130 20 150 20 {}
+L 4 130 40 150 40 {}
+L 4 130 80 150 80 {}
+L 4 -150 30 -130 30 {}
+L 4 130 100 150 100 {}
+L 4 -150 50 -130 50 {}
+L 4 130 120 150 120 {}
+L 4 -150 70 -130 70 {}
+L 4 130 140 150 140 {}
+L 4 130 180 150 180 {}
+L 4 130 200 150 200 {}
+L 4 130 220 150 220 {}
+L 4 130 240 150 240 {}
+L 4 130 280 150 280 {}
+L 4 130 300 150 300 {}
+L 4 130 320 150 320 {}
+L 4 130 340 150 340 {}
+L 4 -150 110 -130 110 {}
+L 4 -150 130 -130 130 {}
+L 4 -150 150 -130 150 {}
+L 4 -150 170 -130 170 {}
+L 7 0 -150 0 -130 {}
+L 7 0 370 0 390 {}
+B 5 -2.5 -152.5 2.5 -147.5 {name=vdd dir=inout name=p2 }
+B 5 -152.5 -102.5 -147.5 -97.5 {name=bg1_en dir=in name=p18 }
+B 5 147.5 -102.5 152.5 -97.5 {name=bg1_curr_ptat dir=out name=p4 }
+B 5 -152.5 -82.5 -147.5 -77.5 {name=bg1_start_n dir=in name=p19 }
+B 5 147.5 -82.5 152.5 -77.5 {name=bg1_curr_ctat dir=out name=p5 }
+B 5 147.5 -62.5 152.5 -57.5 {name=bg1_curr dir=out name=p6 }
+B 5 147.5 -42.5 152.5 -37.5 {name=bg1_volt dir=out name=p7 }
+B 5 -152.5 -32.5 -147.5 -27.5 {name=bg2_en dir=in name=p3 }
+B 5 147.5 -2.5 152.5 2.5 {name=bg2_ptat dir=out name=p15 }
+B 5 -152.5 -12.5 -147.5 -7.5 {name=bg2_start_n dir=in name=p20 }
+B 5 147.5 17.5 152.5 22.5 {name=bg2_ctat dir=out name=p16 }
+B 5 147.5 37.5 152.5 42.5 {name=bg2_cas dir=out name=p17 }
+B 5 147.5 77.5 152.5 82.5 {name=bg3_curr_ptat dir=out name=p11 }
+B 5 -152.5 27.5 -147.5 32.5 {name=bg3_ptat dir=in name=p8 }
+B 5 147.5 97.5 152.5 102.5 {name=bg3_curr_ctat dir=out name=p12 }
+B 5 -152.5 47.5 -147.5 52.5 {name=bg3_ctat dir=in name=p9 }
+B 5 147.5 117.5 152.5 122.5 {name=bg3_curr dir=out name=p13 }
+B 5 -152.5 67.5 -147.5 72.5 {name=bg3_cas dir=in name=p10 }
+B 5 147.5 137.5 152.5 142.5 {name=bg3_volt dir=out name=p14 }
+B 5 -2.5 387.5 2.5 392.5 {name=gnd dir=inout name=p1 }
+B 5 147.5 177.5 152.5 182.5 {name=bg4_curr_ptat dir=out name=p11 }
+B 5 147.5 197.5 152.5 202.5 {name=bg4_curr_ctat dir=out name=p12 }
+B 5 147.5 217.5 152.5 222.5 {name=bg4_curr dir=out name=p13 }
+B 5 147.5 237.5 152.5 242.5 {name=bg4_volt dir=out name=p14 }
+B 5 147.5 277.5 152.5 282.5 {name=td_res1 dir=out name=p11 }
+B 5 147.5 297.5 152.5 302.5 {name=td_res2 dir=out name=p12 }
+B 5 147.5 317.5 152.5 322.5 {name=td_q1 dir=out name=p13 }
+B 5 147.5 337.5 152.5 342.5 {name=td_q8 dir=out name=p14 }
+B 5 -152.5 107.5 -147.5 112.5 {name=bg4_en dir=in name=p8 }
+B 5 -152.5 127.5 -147.5 132.5 {name=bg4_start_n dir=in name=p9 }
+B 5 -152.5 147.5 -147.5 152.5 {name=bg4_ctl_ptat[5:0] dir=in name=p10 }
+B 5 -152.5 167.5 -147.5 172.5 {name=bg4_ctl_ctat[5:0] dir=in name=p10 }
+T {@symname} 37.5 394 0 0 0.3 0.3 {}
+T {@name} 45 378 0 0 0.2 0.2 {}
+T {vdd} 6 -125 0 1 0.2 0.2 {}
+T {bg1_en} -125 -104 0 0 0.2 0.2 {}
+T {bg1_curr_ptat} 125 -104 0 1 0.2 0.2 {}
+T {bg1_start_n} -125 -84 0 0 0.2 0.2 {}
+T {bg1_curr_ctat} 125 -84 0 1 0.2 0.2 {}
+T {bg1_curr} 125 -64 0 1 0.2 0.2 {}
+T {bg1_volt} 125 -44 0 1 0.2 0.2 {}
+T {bg2_en} -125 -34 0 0 0.2 0.2 {}
+T {bg2_ptat} 125 -4 0 1 0.2 0.2 {}
+T {bg2_start_n} -125 -14 0 0 0.2 0.2 {}
+T {bg2_ctat} 125 16 0 1 0.2 0.2 {}
+T {bg2_cas} 125 36 0 1 0.2 0.2 {}
+T {bg3_curr_ptat} 125 76 0 1 0.2 0.2 {}
+T {bg3_ptat} -125 26 0 0 0.2 0.2 {}
+T {bg3_curr_ctat} 125 96 0 1 0.2 0.2 {}
+T {bg3_ctat} -125 46 0 0 0.2 0.2 {}
+T {bg3_curr} 125 116 0 1 0.2 0.2 {}
+T {bg3_cas} -125 66 0 0 0.2 0.2 {}
+T {bg3_volt} 125 136 0 1 0.2 0.2 {}
+T {gnd} -6 365 2 1 0.2 0.2 {}
+T {bg4_curr_ptat} 125 176 0 1 0.2 0.2 {}
+T {bg4_curr_ctat} 125 196 0 1 0.2 0.2 {}
+T {bg4_curr} 125 216 0 1 0.2 0.2 {}
+T {bg4_volt} 125 236 0 1 0.2 0.2 {}
+T {td_res1} 125 276 0 1 0.2 0.2 {}
+T {td_res2} 125 296 0 1 0.2 0.2 {}
+T {td_q1} 125 316 0 1 0.2 0.2 {}
+T {td_q8} 125 336 0 1 0.2 0.2 {}
+T {bg4_en} -125 106 0 0 0.2 0.2 {}
+T {bg4_start_n} -125 126 0 0 0.2 0.2 {}
+T {bg4_ctl_ptat[5:0]} -125 146 0 0 0.2 0.2 {}
+T {bg4_ctl_ctat[5:0]} -125 166 0 0 0.2 0.2 {}

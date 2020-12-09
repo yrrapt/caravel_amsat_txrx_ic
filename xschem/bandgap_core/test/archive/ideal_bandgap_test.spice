@@ -1,0 +1,37 @@
+**.subckt ideal_bandgap_test
+R1 node1 net1 'R1' m=1 
+R2 node3 0 'R2' m=1 
+XQ1 0 0 net1 0 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=8
+XQ2 0 0 node2 0 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1
+G1 vdd node1 node2 node1 1e6
+G2 vdd node2 node2 node1 1e6
+G3 vdd node3 node2 node3 1e6
+V1 vdd 0 {vdd} 
+**** begin user architecture code
+
+
+.temp 27
+
+.lib sky130_fd_pr/models/sky130.lib.spice tt
+.include sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice
+
+.param vdd=1.8
+.param R1=10k
+.param R2=10k
+
+.options savecurrents
+.options cmin=1e-9
+
+.dc temp -40 125 1.65
+
+** add an extra startup current source
+Gsu vdd node2 cur='max(0,500*(0.5-v(node2)))'
+Cs1 node1 0 1
+Cs2 node2 0 1
+Cs3 node3 0 1
+Cs4 net1 0 1
+
+
+**** end user architecture code
+**.ends
+.end

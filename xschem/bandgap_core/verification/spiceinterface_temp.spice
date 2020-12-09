@@ -1,0 +1,68 @@
+**.subckt bandgap_core_stability_ctat
+*  x1 -  bandgap_opamp  IS MISSING !!!!
+.save v( net1 )
+.save v( ref )
+.save v( beta )
+.save v( cas )
+v2 net7 __UNCONNECTED_PIN__ 0
+*  x5 -  bandgap_cascurr_cell  IS MISSING !!!!
+*  x6 -  bandgap_cascurr_cell  IS MISSING !!!!
+*  x10 -  bandgap_cascurr_cell  IS MISSING !!!!
+*  x11 -  bandgap_cascurr_cell  IS MISSING !!!!
+XQ1 GND GND net2 GND sky130_fd_pr__pnp_05v5_W3p40L3p40 m=8
+XQ2 GND GND ref GND sky130_fd_pr__pnp_05v5_W3p40L3p40
+v3 net5 net1 0
+v5 net6 ref 0
+v6 net8 beta 0
+C1 ptat net1 1m m=1
+.save v( net7 )
+.save v( ac )
+*  x8 -  bandgap_bmr  IS MISSING !!!!
+XMcurr net7 bmr_biasv vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XMcurr1 net4 bmr_biasv vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+Vdd vdd GND {vdd} 
+R3 ac ctat 1u ac=1G m=1
+R4 net10 ctat 1G ac=1u m=1
+Vin net10 GND dc=0 ac=1
+*  x2 -  bandgap_opamp  IS MISSING !!!!
+XMcurr2 vdd ac vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=71 m=71 
+XMtri_bias_cas net9 cas vdd vdd sky130_fd_pr__pfet_01v8 W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=6 m=6 
+XMcas_bias cas cas net9 vdd sky130_fd_pr__pfet_01v8 W=5 L=0.35 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+R2 net1 net2 12.03k m=1
+R5 beta GND 25.8k m=1
+XMcurr_cas_nmirror1 net3 net3 GND GND sky130_fd_pr__nfet_01v8_lvt W=7 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XMcurr_cas_nmirror2 cas net3 GND GND sky130_fd_pr__nfet_01v8_lvt W=7 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XMcurr3 net11 ctat vdd vdd sky130_fd_pr__pfet_01v8 W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=32 m=32 
+XMcas net8 cas net11 vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=0.35 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=32 m=32 
+XMcurr4 net12 ac vdd vdd sky130_fd_pr__pfet_01v8 W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=32 m=32 
+XMcas1 GND cas net12 vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=0.35 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=32 m=32 
+**** begin user architecture code
+
+
+.temp 127
+
+.lib sky130_fd_pr/models/sky130.lib.spice tt
+.include sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice
+
+.param vdd=1.8
+
+.save all
+
+.ac dec 10 1 1G
+
+*.control
+*   run
+*   setplot ac1
+*   set units=degrees
+*   gnuplot bandgap_core_stability2 db(ac) ph(ac) db(beta)
+*   *gnuplot bandgap_core_stability2 db(beta) ph(beta)
+*.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+**** begin user architecture code
+
+**** end user architecture code
+.end

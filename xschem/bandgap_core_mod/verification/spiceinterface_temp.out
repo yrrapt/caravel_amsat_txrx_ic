@@ -1,0 +1,42 @@
+Warning: redefinition of .subckt sky130_fd_pr__pnp_05v5_w0p68l0p68, ignored
+
+Circuit: **.subckt bandgap_core_stability_ptat
+
+Scale set
+ASCII raw file "spiceinterface_temp.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: include: has no value, DC 0 assumed
+Note: Starting true gmin stepping
+Trying gmin =   1.0000E-03 Note: One successful gmin step
+Trying gmin =   1.0000E-04 Note: One successful gmin step
+Trying gmin =   1.0000E-05 Note: One successful gmin step
+Trying gmin =   1.0000E-06 Note: One successful gmin step
+Trying gmin =   1.0000E-07 Warning: Further gmin increment
+Trying gmin =   5.6234E-07 Note: One successful gmin step
+Trying gmin =   2.3714E-07 Note: One successful gmin step
+Trying gmin =   6.4938E-08 Note: One successful gmin step
+Trying gmin =   9.3057E-09 Note: One successful gmin step
+Trying gmin =   9.3057E-10 Note: One successful gmin step
+Trying gmin =   9.3057E-11 Note: One successful gmin step
+Trying gmin =   9.3057E-12 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Note: True gmin stepping completed
+No. of Data Columns : 290  
+
+No. of Data Rows : 91
+
+Total analysis time (seconds) = 0.102
+
+Total elapsed time (seconds) = 49.444 
+
+Total DRAM available = 7908.309 MB.
+DRAM currently available = 2669.941 MB.
+Maximum ngspice program size =  295.141 MB.
+Current ngspice program size =  257.848 MB.
+
+Shared ngspice pages =    8.688 MB.
+Text (code) pages =    5.773 MB.
+Stack = 0 bytes.
+Library pages =  257.465 MB.
+

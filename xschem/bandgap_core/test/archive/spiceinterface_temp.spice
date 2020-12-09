@@ -1,0 +1,247 @@
+**.subckt bandgap_core_test_mc
+x1 vdd ptat ctat cas GND en ctl_ptat[4] ctl_ptat[3] ctl_ptat[2] ctl_ptat[1] ctl_ptat[0] ctl_ctat[4]
++ ctl_ctat[3] ctl_ctat[2] ctl_ctat[1] ctl_ctat[0] bandgap_core
+Vdd vdd GND {vdd} 
+.save v( vref )
+viout net1 vref 0
+x12 vdd ptat cas net2 bandgap_cascurr_cell m=4
+x13 vdd ctat cas net3 bandgap_cascurr_cell m=4
+XR3 GND vref GND sky130_fd_pr__res_xhigh_po W=1 L=20 m=1
+vptat net2 net1 0
+vctat net3 net1 0
+Vctl_ptat4 ctl_ptat[4] GND {ctl_ptat4} 
+Vctl_ptat3 ctl_ptat[3] GND {ctl_ptat3} 
+Vctl_ptat2 ctl_ptat[2] GND {ctl_ptat2} 
+Vctl_ptat1 ctl_ptat[1] GND {ctl_ptat1} 
+Vctl_ptat0 ctl_ptat[0] GND {ctl_ptat0} 
+Vctl_ctat4 ctl_ctat[4] GND {ctl_ctat4} 
+Vctl_ctat3 ctl_ctat[3] GND {ctl_ctat3} 
+Vctl_ctat2 ctl_ctat[2] GND {ctl_ctat2} 
+Vctl_ctat1 ctl_ctat[1] GND {ctl_ctat1} 
+Vctl_ctat0 ctl_ctat[0] GND {ctl_ctat0} 
+Ven en GND {en} 
+**** begin user architecture code
+
+
+.temp 27
+
+.lib sky130_fd_pr/models/sky130.lib.spice mc
+.include sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice
+
+.param vdd=1.8
+
+.param en=1.8
+
+.param ctl_ctat4=1.8
+.param ctl_ctat3=0
+.param ctl_ctat2=0
+.param ctl_ctat1=0
+.param ctl_ctat0=0
+
+.param ctl_ptat4=1.8
+.param ctl_ptat3=0
+.param ctl_ptat2=0
+.param ctl_ptat1=0
+.param ctl_ptat0=0
+
+.save all
+.options savecurrents
+
+.dc temp -40 125 1.65
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  ..//bandgap_core.sym # of pins=8
+
+.subckt bandgap_core  vdd ptat ctat cas gnd en ctl_ptat[4] ctl_ptat[3] ctl_ptat[2] ctl_ptat[1]
++ ctl_ptat[0] ctl_ctat[4] ctl_ctat[3] ctl_ctat[2] ctl_ctat[1] ctl_ctat[0]
+*.iopin vdd
+*.iopin gnd
+*.opin ptat
+*.opin ctat
+*.opin cas
+*.ipin en
+*.ipin ctl_ptat[4],ctl_ptat[3],ctl_ptat[2],ctl_ptat[1],ctl_ptat[0]
+*.ipin ctl_ctat[4],ctl_ctat[3],ctl_ctat[2],ctl_ctat[1],ctl_ctat[0]
+x1 vdd ptat net2 net1 net14 gnd bandgap_opamp
+x2 vdd ctat net4 net1 net13 gnd bandgap_opamp
+XM8 cas cas vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM3 net5 net5 gnd gnd sky130_fd_pr__nfet_01v8_lvt W=7 L=8 ad=2.03 pd=14.58 as=2.03 ps=14.58
++ nrd=0.041428571428571426 nrs=0.041428571428571426 sa=0 sb=0 sd=0 nf=1 mult=2 m=2
+XM1 cas net5 gnd gnd sky130_fd_pr__nfet_01v8_lvt W=7 L=8 ad=2.03 pd=14.58 as=2.03 ps=14.58
++ nrd=0.041428571428571426 nrs=0.041428571428571426 sa=0 sb=0 sd=0 nf=1 mult=2 m=2
+.save v( net2 )
+.save v( net1 )
+.save v( net4 )
+.save v( cas )
+v2 net9 net14 0
+x5 vdd ptat cas net6 bandgap_cascurr_cell m=8
+x6 vdd ptat cas net7 bandgap_cascurr_cell m=8
+x7 vdd ctat cas net8 bandgap_cascurr_cell m=8
+x10 vdd ptat cas net5 bandgap_cascurr_cell m=4
+x11 vdd ctat cas net5 bandgap_cascurr_cell m=4
+XQ1 gnd gnd net3 gnd sky130_fd_pr__pnp_05v5_W3p40L3p40 m=8
+XQ2 gnd gnd net1 gnd sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1
+v3 net6 net2 0
+v5 net7 net1 0
+v6 net8 net4 0
+XR1 net3 net2 gnd sky130_fd_pr__res_xhigh_po W=1 L=4.25 m=1
+XR2 gnd net4 gnd sky130_fd_pr__res_xhigh_po W=1 L=38.2 m=1
+.save v( net9 )
+.save v( ctat )
+x8 vdd en bmr_biasv gnd bandgap_bmr
+XMcurr net9 bmr_biasv vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XMcurr1 net13 bmr_biasv vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)'
++ as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XMcurr2 vdd ptat vdd vdd sky130_fd_pr__pfet_01v8_lvt W=7 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=16 m=16 
+XMcurr3 vdd ctat vdd vdd sky130_fd_pr__pfet_01v8_lvt W=7 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=48 m=48 
+x3 ctl_ptat[4] ctl_ptat[3] ctl_ptat[2] ctl_ptat[1] ctl_ptat[0] net2 net10 gnd bandgap_trim
+x4 ctl_ptat[4] ctl_ptat[3] ctl_ptat[2] ctl_ptat[1] ctl_ptat[0] net1 net11 gnd bandgap_trim
+x9 vdd ptat cas net10 bandgap_cascurr_cell m=2
+x12 vdd ptat cas net11 bandgap_cascurr_cell m=2
+x13 ctl_ctat[4] ctl_ctat[3] ctl_ctat[2] ctl_ctat[1] ctl_ctat[0] net4 net12 gnd bandgap_trim
+x14 vdd ctat cas net12 bandgap_cascurr_cell m=2
+.ends
+
+
+* expanding   symbol:  bandgap_cascurr_cell/bandgap_cascurr_cell.sym # of pins=4
+
+.subckt bandgap_cascurr_cell  vdd curr cas out
+*.iopin vdd
+*.ipin curr
+*.ipin cas
+*.opin out
+XMcurr net1 curr vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XMcas out cas net1 vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=0.5 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+.ends
+
+
+* expanding   symbol:  bandgap_opamp/bandgap_opamp.sym # of pins=6
+
+.subckt bandgap_opamp  vdd out inp inn bias gnd
+*.ipin inp
+*.ipin inn
+*.ipin bias
+*.opin out
+*.iopin vdd
+*.iopin gnd
+XMdiffcurr net10 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=8 m=8 
+XM1 net2 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XM3 bias bias gnd gnd sky130_fd_pr__nfet_01v8_lvt W=1 L=4 ad=0.29 pd=2.58 as=0.29 ps=2.58 nrd=0.29
++ nrs=0.29 sa=0 sb=0 sd=0 nf=1 mult=2 m=2
+XM4 net2 bias gnd gnd sky130_fd_pr__nfet_01v8_lvt W=1 L=4 ad=0.29 pd=2.58 as=0.29 ps=2.58 nrd=0.29
++ nrs=0.29 sa=0 sb=0 sd=0 nf=1 mult=2 m=2
+XM9 net12 net5 gnd gnd sky130_fd_pr__nfet_01v8_lvt W=1 L=4 ad=0.29 pd=2.58 as=0.29 ps=2.58 nrd=0.29
++ nrs=0.29 sa=0 sb=0 sd=0 nf=1 mult=1 m=1
+XM14 net11 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XMdiffcurr1 net1 net9 net10 vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=0.5 ad='W * 0.29' pd='2 * (W + 0.29)'
++ as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=8 m=8 
+XM2 net9 bias gnd gnd sky130_fd_pr__nfet_01v8_lvt W=1 L=4 ad=0.29 pd=2.58 as=0.29 ps=2.58 nrd=0.29
++ nrs=0.29 sa=0 sb=0 sd=0 nf=1 mult=2 m=2
+XM8 net9 net9 vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XMdiffcurr4 net5 net9 net11 vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=0.5 ad='W * 0.29' pd='2 * (W + 0.29)'
++ as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XM6 net5 net5 net12 gnd sky130_fd_pr__nfet_01v8_lvt W=5 L=2 ad=1.45 pd=10.58 as=1.45 ps=10.58
++ nrd=0.057999999999999996 nrs=0.057999999999999996 sa=0 sb=0 sd=0 nf=1 mult=4 m=4
+.save v( net3 )
+XM5 out net5 net4 gnd sky130_fd_pr__nfet_01v8_lvt W=5 L=2 ad=1.45 pd=10.58 as=1.45 ps=10.58
++ nrd=0.057999999999999996 nrs=0.057999999999999996 sa=0 sb=0 sd=0 nf=1 mult=4 m=4
+XM7 net6 net5 net3 gnd sky130_fd_pr__nfet_01v8_lvt W=5 L=2 ad=1.45 pd=10.58 as=1.45 ps=10.58
++ nrd=0.057999999999999996 nrs=0.057999999999999996 sa=0 sb=0 sd=0 nf=1 mult=4 m=4
+XM10 net7 net6 vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XM11 net8 net6 vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XMdiffcurr2 out net9 net8 vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=0.5 ad='W * 0.29' pd='2 * (W + 0.29)'
++ as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XMdiffcurr3 net6 net9 net7 vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=0.5 ad='W * 0.29' pd='2 * (W + 0.29)'
++ as='W * 0.29' ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XM12 net4 bias gnd gnd sky130_fd_pr__nfet_01v8_lvt W=1 L=4 ad=0.29 pd=2.58 as=0.29 ps=2.58 nrd=0.29
++ nrs=0.29 sa=0 sb=0 sd=0 nf=1 mult=4 m=4
+XM13 net3 bias gnd gnd sky130_fd_pr__nfet_01v8_lvt W=1 L=4 ad=0.29 pd=2.58 as=0.29 ps=2.58 nrd=0.29
++ nrs=0.29 sa=0 sb=0 sd=0 nf=1 mult=4 m=4
+XMdiffn net4 inn net1 net1 sky130_fd_pr__pfet_01v8_lvt W=7 L=0.35 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XMdiffp net3 inp net1 net1 sky130_fd_pr__pfet_01v8_lvt W=7 L=0.35 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+.save v( net5 )
+.save v( net1 )
+.ends
+
+
+* expanding   symbol:  bandgap_bmr/bandgap_bmr.sym # of pins=4
+
+.subckt bandgap_bmr  vdd en biasv vss
+*.iopin vdd
+*.iopin vss
+*.opin biasv
+*.ipin en
+XM2 biasv net1 net2 vss sky130_fd_pr__nfet_01v8 W=5 L=1 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=16 m=16 
+XR1 vss net2 vss sky130_fd_pr__res_xhigh_po W=1 L=3.2 m=1
+XM3 net1 net1 vss vss sky130_fd_pr__nfet_01v8 W=5 L=1 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XMcurr biasv biasv vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XMcurr1 net1 biasv vdd vdd sky130_fd_pr__pfet_01v8_lvt W=5 L=8 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM1 biasv net3 net1 vss sky130_fd_pr__nfet_01v8 W=5 L=1 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM4 net3 net1 vss vss sky130_fd_pr__nfet_01v8 W=5 L=1 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XMcurr2 net3 net3 vdd vdd sky130_fd_pr__pfet_01v8_lvt W=0.42 L=20 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XMcurr3 biasv en vdd vdd sky130_fd_pr__pfet_01v8_lvt W=1 L=0.35 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XMcurr4 net3 en vdd vdd sky130_fd_pr__pfet_01v8_lvt W=1 L=0.35 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XC1 biasv net1 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1
+.ends
+
+
+* expanding   symbol:  bandgap_trim/bandgap_trim.sym # of pins=4
+
+.subckt bandgap_trim  ctl[4] ctl[3] ctl[2] ctl[1] ctl[0] out in gnd
+*.ipin ctl[4],ctl[3],ctl[2],ctl[1],ctl[0]
+*.ipin gnd
+*.ipin in
+*.opin out
+XM2 net2 in gnd gnd sky130_fd_pr__nfet_01v8 W=0.42 L=20 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=8 m=8 
+XM4 net3 in gnd gnd sky130_fd_pr__nfet_01v8 W=0.42 L=20 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XM5 net4 in gnd gnd sky130_fd_pr__nfet_01v8 W=0.42 L=20 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=2 m=2 
+XM6 net5 in gnd gnd sky130_fd_pr__nfet_01v8 W=0.42 L=20 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM7 out ctl[3] net2 gnd sky130_fd_pr__nfet_01v8 W=0.42 L=0.15 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=8 m=8 
+XM9 out ctl[2] net3 gnd sky130_fd_pr__nfet_01v8 W=0.42 L=0.15 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=4 m=4 
+XM10 out ctl[1] net4 gnd sky130_fd_pr__nfet_01v8 W=0.42 L=0.15 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=2 m=2 
+XM11 out ctl[0] net5 gnd sky130_fd_pr__nfet_01v8 W=0.42 L=0.15 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=1 m=1 
+XM12 net1 in gnd gnd sky130_fd_pr__nfet_01v8 W=0.42 L=20 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=16 m=16 
+XM13 out ctl[4] net1 gnd sky130_fd_pr__nfet_01v8 W=0.42 L=0.15 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=16 m=16 
+XM1 in in gnd gnd sky130_fd_pr__nfet_01v8 W=0.42 L=20 ad='W * 0.29' pd='2 * (W + 0.29)' as='W * 0.29'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 nf=1 mult=16 m=16 
+.ends
+
+.GLOBAL GND
+.end

@@ -1,0 +1,24 @@
+**.subckt bjt_test
+XQ1 0 0 anode 0 sky130_fd_pr__pnp_05v5_W3p40L3p40 m='m' 
+Vvdd vdd 0 {vdd} 
+Ianode vdd anode {current} 
+**** begin user architecture code
+
+
+.temp 27
+
+.lib sky130_fd_pr/models/sky130.lib.spice tt
+.include sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice
+
+.param vdd=1.8
+.param current=1u
+.param m=1
+
+.options savecurrents
+
+.dc ianode 0.1e-6 10e-6 0.1e-6
+
+
+**** end user architecture code
+**.ends
+.end

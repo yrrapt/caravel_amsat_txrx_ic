@@ -1,0 +1,178 @@
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+
+Circuit: **.subckt bandgap_opamp_verification
+
+Scale set
+ASCII raw file "spiceinterface_temp.raw"
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+Warning: include: has no value, DC 0 assumed
+Note: Starting true gmin stepping
+Trying gmin =   1.0000E-03 Note: One successful gmin step
+Trying gmin =   1.0000E-04 Note: One successful gmin step
+Trying gmin =   1.0000E-05 Note: One successful gmin step
+Trying gmin =   1.0000E-06 Warning: Further gmin increment
+Trying gmin =   5.6234E-06 Note: One successful gmin step
+Trying gmin =   2.3714E-06 Note: One successful gmin step
+Trying gmin =   6.4938E-07 Warning: Further gmin increment
+Trying gmin =   1.7154E-06 Warning: Further gmin increment
+Trying gmin =   2.1870E-06 Note: One successful gmin step
+Trying gmin =   1.9369E-06 Note: One successful gmin step
+Trying gmin =   1.6144E-06 Warning: Further gmin increment
+Trying gmin =   1.8507E-06 Note: One successful gmin step
+Trying gmin =   1.7285E-06 Note: One successful gmin step
+Trying gmin =   1.5602E-06 Note: One successful gmin step
+Trying gmin =   1.3379E-06 Note: One successful gmin step
+Trying gmin =   1.0625E-06 Note: One successful gmin step
+Trying gmin =   7.5189E-07 Note: One successful gmin step
+Trying gmin =   4.4761E-07 Note: One successful gmin step
+Trying gmin =   2.0560E-07 Note: One successful gmin step
+Trying gmin =   6.4002E-08 Note: One successful gmin step
+Trying gmin =   1.1116E-08 Note: One successful gmin step
+Trying gmin =   1.1116E-09 Note: One successful gmin step
+Trying gmin =   1.1116E-10 Note: One successful gmin step
+Trying gmin =   1.1116E-11 Note: One successful gmin step
+Trying gmin =   1.1116E-12 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Note: True gmin stepping completed
+No. of Data Columns : 295  
+Warning: unrecognized variable - @m.xdut.xmmpdiff.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmmpdiff.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmmpdiff.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmmpr.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmmpr.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmmpr.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmmnr.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmmnr.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmmnr.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmmnb.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmmnb.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmmnb.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmtrioden.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmtrioden.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmtrioden.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmmpa.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmmpa.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmmpa.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmcpdiff.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmcpdiff.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmcpdiff.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmmna.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmmna.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmmna.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmtriodep.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmtriodep.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmtriodep.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmcpa.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmcpa.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmcpa.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmcasba.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmcasba.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmcasba.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmcasn.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmcasn.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmcasn.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmcasp.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmcasp.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmcasp.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmloadmp.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmloadmp.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmloadmp.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmloadmn.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmloadmn.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmloadmn.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmloadcn.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmloadcn.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmloadcn.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmloadcp.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmloadcp.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmloadcp.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmmfn.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmmfn.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmmfn.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmmfp.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmmfp.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmmfp.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmdiffn.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmdiffn.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmdiffn.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmdiffp.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmdiffp.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmdiffp.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmcpdiff1.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmcpdiff1.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmcpdiff1.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmmnc.msky130_fd_pr__nfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmmnc.msky130_fd_pr__nfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmmnc.msky130_fd_pr__nfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xdut.xmgain.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xdut.xmgain.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xdut.xmgain.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @r1[i]
+Warning: unrecognized variable - @r2[i]
+Warning: unrecognized variable - @m.xmcurr_op_ctat.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xmcurr_op_ctat.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xmcurr_op_ctat.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xbmr.xmdiff_n2.msky130_fd_pr__nfet_01v8[is]
+Warning: unrecognized variable - @m.xbmr.xmdiff_n2.msky130_fd_pr__nfet_01v8[ig]
+Warning: unrecognized variable - @m.xbmr.xmdiff_n2.msky130_fd_pr__nfet_01v8[ib]
+Warning: unrecognized variable - @r.xbmr.xr1.rend1[i]
+Warning: unrecognized variable - @r.xbmr.xr1.rend2[i]
+Warning: unrecognized variable - @c.xbmr.xr1.xc0.c0[i]
+Warning: unrecognized variable - @c.xbmr.xr1.xc0.c1[i]
+Warning: unrecognized variable - @m.xbmr.xmdiff_n1.msky130_fd_pr__nfet_01v8[is]
+Warning: unrecognized variable - @m.xbmr.xmdiff_n1.msky130_fd_pr__nfet_01v8[ig]
+Warning: unrecognized variable - @m.xbmr.xmdiff_n1.msky130_fd_pr__nfet_01v8[ib]
+Warning: unrecognized variable - @m.xbmr.xmcurr_p2.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xbmr.xmcurr_p2.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xbmr.xmcurr_p2.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xbmr.xmcurr_p1.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xbmr.xmcurr_p1.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xbmr.xmcurr_p1.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xbmr.xmsw_start.msky130_fd_pr__nfet_01v8[is]
+Warning: unrecognized variable - @m.xbmr.xmsw_start.msky130_fd_pr__nfet_01v8[ig]
+Warning: unrecognized variable - @m.xbmr.xmsw_start.msky130_fd_pr__nfet_01v8[ib]
+Warning: unrecognized variable - @m.xbmr.xmdiff_n3.msky130_fd_pr__nfet_01v8[is]
+Warning: unrecognized variable - @m.xbmr.xmdiff_n3.msky130_fd_pr__nfet_01v8[ig]
+Warning: unrecognized variable - @m.xbmr.xmdiff_n3.msky130_fd_pr__nfet_01v8[ib]
+Warning: unrecognized variable - @m.xbmr.xmcurr_bias.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xbmr.xmcurr_bias.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xbmr.xmcurr_bias.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xbmr.xmsw_en2.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xbmr.xmsw_en2.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xbmr.xmsw_en2.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @m.xbmr.xmsw_en1.msky130_fd_pr__pfet_01v8_lvt[is]
+Warning: unrecognized variable - @m.xbmr.xmsw_en1.msky130_fd_pr__pfet_01v8_lvt[ig]
+Warning: unrecognized variable - @m.xbmr.xmsw_en1.msky130_fd_pr__pfet_01v8_lvt[ib]
+Warning: unrecognized variable - @c.xbmr.xccomp.c1[i]
+Warning: unrecognized variable - @r.xbmr.xccomp.rs1[i]
+Warning: unrecognized variable - @r.xbmr.xccomp.rs2[i]
+Warning: unrecognized variable - @m.xbmr.xmdum.msky130_fd_pr__nfet_01v8[is]
+Warning: unrecognized variable - @m.xbmr.xmdum.msky130_fd_pr__nfet_01v8[ig]
+Warning: unrecognized variable - @m.xbmr.xmdum.msky130_fd_pr__nfet_01v8[ib]
+Warning: unrecognized variable - @c.xbmr.xcfilt.c1[i]
+Warning: unrecognized variable - @r.xbmr.xcfilt.rs1[i]
+Warning: unrecognized variable - @r.xbmr.xcfilt.rs2[i]
+Warning: unrecognized variable - @include[current]
+
+No. of Data Rows : 91
+
+Total analysis time (seconds) = 0.157805
+
+Total CPU time (seconds) = 87.062 
+
+Total DRAM available = 7908.309 MB.
+DRAM currently available =  557.215 MB.
+Maximum ngspice program size =  273.652 MB.
+Current ngspice program size =  243.879 MB.
+
+Shared ngspice pages =    7.547 MB.
+Text (code) pages =    7.965 MB.
+Stack = 0 bytes.
+Library pages =  236.676 MB.
+

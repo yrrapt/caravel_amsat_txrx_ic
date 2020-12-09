@@ -1,0 +1,135 @@
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+Warning: redefinition of .subckt sky130_fd_pr__pnp_05v5_w0p68l0p68, ignored
+
+Circuit: **.subckt ideal_bandgap_test
+
+Scale set
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+No. of Data Columns : 27  
+Warning: unrecognized variable - @include[current]
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+Warning: include: has no value, DC 0 assumed
+
+No. of Data Rows : 101
+
+Total analysis time (seconds) = 0.006482
+
+Total CPU time (seconds) = 51.461 
+
+Total DRAM available = 7908.293 MB.
+DRAM currently available =  702.105 MB.
+Total ngspice program size =  243.113 MB.
+Resident set size =  223.668 MB.
+Shared ngspice pages =    6.969 MB.
+Text (code) pages =    5.105 MB.
+Stack = 0 bytes.
+Library pages =  217.066 MB.
+

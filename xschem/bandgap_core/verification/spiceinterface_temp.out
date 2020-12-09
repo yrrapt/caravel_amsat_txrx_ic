@@ -1,0 +1,134 @@
+Warning: redefinition of .subckt sky130_fd_pr__pnp_05v5_w0p68l0p68, ignored
+
+Circuit: **.subckt bandgap_core_stability_ctat
+
+Scale set
+ASCII raw file "spiceinterface_temp.raw"
+Doing analysis at TEMP = 127.000000 and TNOM = 27.000000
+
+Warning: include: has no value, DC 0 assumed
+Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Note: Starting true gmin stepping
+Trying gmin =   1.0000E-03 Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Further gmin increment
+Trying gmin =   5.6234E-03 Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Further gmin increment
+Trying gmin =   8.6596E-03 Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Further gmin increment
+Trying gmin =   9.6466E-03 Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Further gmin increment
+Trying gmin =   9.9105E-03 Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Further gmin increment
+Trying gmin =   9.9775E-03 Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Further gmin increment
+Trying gmin =   9.9944E-03 Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Further gmin increment
+Trying gmin =   9.9986E-03 Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Further gmin increment
+Trying gmin =   9.9996E-03 Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Last gmin step failed
+Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: True gmin stepping failed
+Note: Starting dynamic gmin stepping
+Trying gmin =   1.0000E-03 Note: One successful gmin step
+Trying gmin =   1.0000E-04 Note: One successful gmin step
+Trying gmin =   1.0000E-05 Note: One successful gmin step
+Trying gmin =   1.0000E-06 Note: One successful gmin step
+Trying gmin =   1.0000E-07 Note: One successful gmin step
+Trying gmin =   1.0000E-08 Note: One successful gmin step
+Trying gmin =   1.0000E-09 Note: One successful gmin step
+Trying gmin =   1.0000E-10 Note: One successful gmin step
+Trying gmin =   1.0000E-11 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: Dynamic gmin stepping failed
+Note: Starting source stepping
+Supplies reduced to   0.0000% Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+
+Trying gmin =   1.0000E-02 Note: One successful gmin step
+Trying gmin =   1.0000E-03 Note: One successful gmin step
+Trying gmin =   1.0000E-04 Note: One successful gmin step
+Trying gmin =   1.0000E-05 Note: One successful gmin step
+Trying gmin =   1.0000E-06 Note: One successful gmin step
+Trying gmin =   1.0000E-07 Note: One successful gmin step
+Trying gmin =   1.0000E-08 Note: One successful gmin step
+Trying gmin =   1.0000E-09 Note: One successful gmin step
+Trying gmin =   1.0000E-10 Note: One successful gmin step
+Trying gmin =   1.0000E-11 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Note: One successful source step
+Supplies reduced to   0.1000% Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Supplies reduced to   0.0000% Warning: singular matrix:  check nodes bmr_biasv and bmr_biasv
+
+Warning: source stepping failed
+
+AC operating point failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+net7                                   -1.04537e-17                    0
+__unconnected_pin__                    -1.04537e-17                    0
+net2                                   -4.88834e-48                    0
+ref                                    -1.12354e-60                    0
+net5                                   -4.88834e-48                    0
+net1                                   -4.88834e-48                    0
+net6                                   -1.12354e-60                    0
+net8                                    3.73861e-30                    0
+beta                                    3.73861e-30                    0
+ptat                                              0                    0
+bmr_biasv                                         0                    0
+vdd                                               0                    0
+net4                                   -1.04537e-17                    0
+ac                                                0                    0
+ctat                                              0                    0
+net10                                             0                    0
+net9                                    4.15242e-49                    0
+cas                                     -4.5246e-47                    0
+net3                                   -3.71049e-52                    0
+net11                                   -2.1638e-24                    0
+net12                                   6.15272e-26                    0
+sky130_fd_pr__esd_nfet_05v0_nvt.pm3                    0                    0
+                                                  0                    0
+vin#branch                                        0                    0
+vdd#branch                              4.17182e-29                    0
+v6#branch                               1.44908e-34                    0
+v5#branch                                         0                    0
+v3#branch                                         0                    0
+v2#branch                                         0                    0
+
+doAnalyses: iteration limit reached
+
+run simulation(s) aborted
+
+Total analysis time (seconds) = 0.008
+
+Total elapsed time (seconds) = 48.278 
+
+Total DRAM available = 7908.293 MB.
+DRAM currently available =  741.961 MB.
+Maximum ngspice program size =  292.500 MB.
+Current ngspice program size =  257.125 MB.
+
+Shared ngspice pages =    8.023 MB.
+Text (code) pages =    5.770 MB.
+Stack = 0 bytes.
+Library pages =  257.441 MB.
+
