@@ -1,0 +1,116 @@
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+codemodel: no such command available in ngspice
+
+Circuit: **.subckt vco_2-4ghz_tb
+
+Scale set
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: include: has no value, DC 0 assumed
+Warning: i.xvco.i0: no DC value, transient time 0 value used
+No. of Data Columns : 5  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vctl                                         0
+net1                                         0
+xvco.net1                                    0
+xvco.net8                                    0
+xvco.net2                                    0
+xvco.net7                                    0
+xvco.x1.net2                                 0
+xvco.x1.net1                                 0
+xvco.net3                                    0
+xvco.net4                                    0
+xvco.x2.net2                                 0
+xvco.x2.net1                                 0
+xvco.net5                                    0
+xvco.net6                                    0
+xvco.x3.net2                                 0
+xvco.x3.net1                                 0
+xvco.x4.net2                                 0
+xvco.x4.net1                                 0
+ip                                           0
+in                                           0
+xvco.x5.xrn.xsky130_fd_pr__res_xhigh_po_2p85.ra               0
+xvco.x5.xrp.xsky130_fd_pr__res_xhigh_po_2p85.ra               0
+qp                                           0
+qn                                           0
+xvco.x6.xrn.xsky130_fd_pr__res_xhigh_po_2p85.ra               0
+xvco.x6.xrp.xsky130_fd_pr__res_xhigh_po_2p85.ra               0
+ncp                                          0
+ncn                                          0
+xvco.x7.xrn.xsky130_fd_pr__res_xhigh_po_2p85.ra               0
+xvco.x7.xrp.xsky130_fd_pr__res_xhigh_po_2p85.ra               0
+fbp                                          0
+fbn                                          0
+xvco.x8.xrn.xsky130_fd_pr__res_xhigh_po_2p85.ra               0
+xvco.x8.xrp.xsky130_fd_pr__res_xhigh_po_2p85.ra               0
+sky130_fd_pr__esd_nfet_05v0_nvt.pm3               0
+                                             0
+vdd#branch                                   0
+v1#branch                                    0
+
+
+No. of Data Rows : 1026
+
+Total analysis time (seconds) = 1.71965
+
+Total CPU time (seconds) = 51.261 
+
+Total DRAM available = 7908.293 MB.
+DRAM currently available =  153.211 MB.
+Total ngspice program size =  243.086 MB.
+Resident set size =  223.559 MB.
+Shared ngspice pages =    6.891 MB.
+Text (code) pages =    5.105 MB.
+Stack = 0 bytes.
+Library pages =  217.039 MB.
+

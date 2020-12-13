@@ -1,7 +1,39 @@
 
 module user_project_wrapper(
+            inout     vssd1,
+            inout     vccd1,
             inout     vssd2,
             inout     vccd2,
+            in        la_data_in[0],
+            in        la_data_in[1],
+            in        la_data_in[2],
+            in        la_data_in[3],
+            in        la_data_in[4],
+            in        la_data_in[5],
+            in        la_data_in[6],
+            in        la_data_in[7],
+            in        la_data_in[8],
+            in        la_data_in[9],
+            in        la_data_in[10],
+            in        la_data_in[11],
+            in        la_data_in[12],
+            in        la_data_in[13],
+            in        la_data_in[14],
+            in        la_data_in[15],
+            in        la_data_in[16],
+            in        la_data_in[17],
+            in        la_data_in[18],
+            in        la_data_in[19],
+            in        la_data_in[20],
+            in        la_data_in[21],
+            in        la_data_in[22],
+            in        la_data_in[23],
+            in        la_data_in[24],
+            in        la_data_in[25],
+            in        la_data_in[26],
+            in        la_data_in[27],
+            in        la_data_in[28],
+            in        la_data_in[29],
             in        la_data_in[95],
             in        la_data_in[94],
             in        la_data_in[93],
@@ -41,7 +73,19 @@ module user_project_wrapper(
             inout     analog_io[18],
             inout     analog_io[19],
             inout     analog_io[20],
-            inout     analog_io[21]
+            inout     analog_io[21],
+            inout     analog_io[24],
+            inout     analog_io[25],
+            inout     analog_io[26],
+            inout     analog_io[27],
+            inout     analog_io[28],
+            inout     analog_io[29],
+            inout     analog_io[30]
     );
+
+
+      fake fake ();
+
+
 
 endmodule

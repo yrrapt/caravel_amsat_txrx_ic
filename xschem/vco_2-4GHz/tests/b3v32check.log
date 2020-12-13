@@ -1,0 +1,4 @@
+BSIM3 Model (Supports: v3.2, v3.2.2, v3.2.3, v3.2.4)
+Parameter Checking.
+Model = xvco.x1.xmprimpos:nemod.3
+W = 3e-05, L = 1.8e-07, M = 1

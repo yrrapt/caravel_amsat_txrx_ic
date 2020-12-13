@@ -1,0 +1,5 @@
+BSIM4v5: Berkeley Short Channel IGFET Model-4
+Developed by Xuemei (Jane) Xi, Mohan Dunga, Prof. Ali Niknejad and Prof. Chenming Hu in 2003.
+
+++++++++++ BSIM4v5 PARAMETER CHECKING BELOW ++++++++++
+Model = xvco.x1.xxmprimpos.xsky130_fd_pr__rf_nfet_01v8_bm04w5p00l0p15:sky130_fd_pr__rf_nfet_01v8_bm04__model.6
