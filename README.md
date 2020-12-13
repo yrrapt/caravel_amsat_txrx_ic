@@ -31,13 +31,13 @@ klayout amsat_txrx_ic-caravel.gds
 
 4. Run DRC:
 ```
-cd amsat_txrx_ic-caravel/scripts
+cd amsat_txrx_ic-caravel/utils
 ./run_drc amsat_txrx_ic-caravel
 ```
 
 5. Run LVS:
 ```
-cd amsat_txrx_ic-caravel/scripts
+cd amsat_txrx_ic-caravel/utils
 ./run_drc amsat_txrx_ic-caravel
 ```
 
