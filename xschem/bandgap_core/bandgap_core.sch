@@ -127,13 +127,14 @@ N 1630 -890 1890 -890 { lab=vdd}
 N 700 -410 1130 -410 { lab=q8}
 N 950 -60 950 0 { lab=gnd}
 N 890 0 950 0 {lab=gnd}
-N 380 -300 890 -300 { lab=q1}
 N 1130 -410 1130 -290 { lab=q8}
 N 1130 -150 1130 -90 { lab=#net5}
 N 1420 -150 1420 0 { lab=gnd}
 N 890 -370 890 -300 {lab=q1}
 N 2760 -890 2780 -890 { lab=vdd}
 N 2620 -890 2760 -890 { lab=vdd}
+N 20 -770 40 -770 { lab=en}
+N 20 -770 20 -680 { lab=en}
 N 180 -890 180 -730 { lab=vdd}
 N 2700 -780 2780 -780 { lab=cas}
 N 1590 -790 2030 -790 { lab=ctat}
@@ -145,7 +146,8 @@ N 2030 -790 2030 -480 { lab=ctat}
 N 480 -390 520 -390 { lab=ptat}
 N 480 -790 480 -390 { lab=ptat}
 N 2700 -610 2780 -610 { lab=cas}
-N 630 -510 630 -450 { lab=#net3}
+N 380 -300 410 -300 { lab=q1}
+N 410 -300 890 -300 { lab=q1}
 C {bandgap_opamp/bandgap_opamp.sym} 600 -390 0 1 {name=xop_ptat}
 C {bandgap_opamp/bandgap_opamp.sym} 1920 -480 0 0 {name=xop_ctat}
 C {lab_wire.sym} 800 -790 0 0 {name=l1 sig_type=std_logic lab=ptat}
@@ -154,8 +156,6 @@ C {lab_wire.sym} 1510 -790 0 1 {name=l3 sig_type=std_logic lab=ctat}
 C {lab_wire.sym} 800 -710 0 0 {name=l4 sig_type=std_logic lab=cas}
 C {lab_wire.sym} 1220 -710 0 1 {name=l5 sig_type=std_logic lab=cas}
 C {lab_wire.sym} 1510 -710 0 1 {name=l6 sig_type=std_logic lab=cas}
-C {lab_wire.sym} 2130 -710 0 0 {name=l7 sig_type=std_logic lab=gnd}
-C {lab_wire.sym} 2340 -710 0 0 {name=l8 sig_type=std_logic lab=gnd}
 C {lab_wire.sym} 2130 -790 0 0 {name=l9 sig_type=std_logic lab=ptat}
 C {lab_wire.sym} 2340 -790 0 0 {name=l10 sig_type=std_logic lab=ctat}
 C {iopin.sym} 0 -890 0 1 {name=p1 lab=vdd}
@@ -163,14 +163,14 @@ C {iopin.sym} 0 0 0 1 {name=p2 lab=gnd}
 C {opin.sym} 2780 -350 0 0 {name=p3 lab=ptat}
 C {opin.sym} 2780 -480 0 0 {name=p4 lab=ctat}
 C {opin.sym} 2780 -610 0 0 {name=p5 lab=cas}
-C {sky130_fd_pr/pfet_01v8.sym} 2640 -780 0 1 {name=Mtri_bias_cas[4:1]
+C {sky130_fd_pr/pfet_01v8.sym} 2640 -780 0 1 {name=Mtri_bias_cas
 L=8
 W=5
 ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
 as="'W * 0.29'" ps="'2 * (W + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-nf=1 mult=1
+nf=1 mult=4
 model=pfet_01v8
 spiceprefix=X
 }
@@ -196,11 +196,20 @@ nf=1 mult=4
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 890 -750 0 0 {name=xcurr_ptat8[8:1] m=1}
-C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 1130 -750 0 1 {name=xcurr_ptat1[8:1] m=1}
-C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 1420 -750 0 1 {name=xcurr_ctat[32:1] m=1}
-C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 2220 -750 0 0 {name=xcurr_cas_ptat[2:1] m=1}
-C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 2430 -750 0 0 {name=xcurr_cas_ctat[2:1] m=1}
+C {ammeter.sym} 630 -480 0 0 {name=v2 current=8.6077e-11}
+C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 890 -750 0 0 {name=xcurr_ptat8 m=8}
+C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 1130 -750 0 1 {name=xcurr_ptat1 m=8}
+C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 1420 -750 0 1 {name=xcurr_ctat m=32}
+C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 2220 -750 0 0 {name=xcurr_cas_ptat m=2}
+C {bandgap_cascurr_cell/bandgap_cascurr_cell.sym} 2430 -750 0 0 {name=xcurr_cas_ctat m=2}
+C {sky130_fd_pr/pnp_05v5.sym} 870 -60 0 0 {name=Q1
+model="pnp_05v5_W3p40L3p40 m=1"
+spiceprefix=X}
+C {sky130_fd_pr/pnp_05v5.sym} 1150 -60 0 1 {name=Q8
+m=1
+model="pnp_05v5_W3p40L3p40 m=8"
+spiceprefix=X
+}
 C {bandgap_bmr/bandgap_bmr.sym} 180 -680 0 0 {name=xbmr}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 650 -670 0 1 {name=Mcurr_op_ptat
 L=8
@@ -245,7 +254,7 @@ ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
 as="'W * 0.29'" ps="'2 * (W + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-nf=1 mult=66
+nf=1 mult=71
 model=pfet_01v8_lvt
 spiceprefix=X
 }
@@ -265,19 +274,20 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {ipin.sym} 0 -420 0 0 {name=p16 lab=start_n}
-C {sky130_fd_pr/pfet_01v8.sym} 2640 -700 0 1 {name=Mcas_bias[4:1]
+C {sky130_fd_pr/pfet_01v8.sym} 2640 -700 0 1 {name=Mcas_bias
 L=0.35
 W=5
 ad="'W * 0.29'" pd="'2 * (W + 0.29)'"
 as="'W * 0.29'" ps="'2 * (W + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-nf=1 mult=1
+nf=1 mult=4
 model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 2620 -610 0 1 {name=l27 sig_type=std_logic lab=cas}
 C {lab_wire.sym} 1500 -500 0 1 {name=l28 sig_type=std_logic lab=ctat_r}
+C {bandgap_resistors/bandgap_resistors.sym} 1270 -220 0 0 {name=xres}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 2800 -840 0 1 {name=Msw_en_cas
 L=8
 W=0.42
@@ -289,5 +299,9 @@ nf=1 mult=1
 model=pfet_01v8_hvt
 spiceprefix=X
 }
+C {sky130_stdcells/inv_1.sym} 80 -770 0 0 {name=xen VGND=gnd VNB=gnd VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {lab_wire.sym} 120 -770 0 1 {name=l25 sig_type=std_logic lab=en_n}
 C {lab_wire.sym} 630 -330 2 0 {name=l31 sig_type=std_logic lab=en}
 C {lab_wire.sym} 1890 -420 2 1 {name=l32 sig_type=std_logic lab=en}
+C {lab_wire.sym} 2130 -710 0 0 {name=l7 sig_type=std_logic lab=gnd}
+C {lab_wire.sym} 2340 -710 0 0 {name=l8 sig_type=std_logic lab=gnd}
