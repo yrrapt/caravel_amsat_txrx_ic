@@ -1,4 +1,4 @@
-# Amatuer Radio Satellite Transceiver (SKY130) - Caravel Submission
+# Amateur Radio Satellite Transceiver (SKY130) - Caravel Submission
 
 This is the Google/EFabless/Skywater Caravel submission of the Amateur Radio Satellite Transceiver.
 
