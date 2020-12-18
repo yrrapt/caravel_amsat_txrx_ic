@@ -18,7 +18,7 @@ A cell based buffer is used to drive the external 100 ohm differential output.
 
 ### Bandgap
 
-![bandgap](doc/bandgap_trimmed/bandgap_trimmed_layout.png)
+![bandgap](doc/bandgap_trimmed/bandgap_trimmed.png)
 
 A bandgap reference with separate PTAT and CTAT currents. Provides less than variation from -40 to 125 degrees celcius.  6 bits of trimming on both PTAT and CTAT allows less than 1% accuracy over process variations.
 
