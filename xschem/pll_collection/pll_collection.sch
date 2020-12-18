@@ -167,7 +167,6 @@ C {lab_pin.sym} 340 -290 0 1 {name=l3 sig_type=std_logic lab=ph1_n}
 C {lab_pin.sym} 340 -160 0 1 {name=l6 sig_type=std_logic lab=ph4_p}
 C {lab_pin.sym} 340 -140 0 1 {name=l7 sig_type=std_logic lab=ph4_n}
 C {lab_pin.sym} 1940 -190 0 1 {name=l8 sig_type=std_logic lab=ff_nc}
-C {sky130_stdcells/tapvpwrvgnd_1.sym} 1640 -900 0 0 {name=x10[2:1] VGND=vss VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {lab_pin.sym} 340 -260 0 1 {name=l1 sig_type=std_logic lab=ph2_p}
 C {lab_pin.sym} 340 -240 0 1 {name=l4 sig_type=std_logic lab=ph2_n}
 C {lab_wire.sym} 3150 -210 0 1 {name=l5 sig_type=std_logic lab=DOWN}

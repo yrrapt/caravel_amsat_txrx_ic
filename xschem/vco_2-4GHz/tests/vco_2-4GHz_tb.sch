@@ -98,7 +98,7 @@ value="
 
 .tran 0.01n 10n uic
 .param vdd=1.8
-.param vctl=0.2
+.param vctl=1.6
 "}
 C {vco_2-4GHz/vco_2-4GHz.sym} -130 -270 0 0 {name=xvco}
 C {lab_wire.sym} 40 -340 0 1 {name=l8 sig_type=std_logic lab=In}

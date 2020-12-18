@@ -7,24 +7,51 @@ template="name=x1"
 V {}
 S {}
 E {}
-L 4 -130 -40 130 -40 {}
-L 4 -130 40 130 40 {}
-L 4 -130 -40 -130 40 {}
-L 4 130 -40 130 40 {}
+L 4 -130 -110 130 -110 {}
+L 4 -130 100 130 100 {}
+L 4 -130 -110 -130 100 {}
+L 4 130 -110 130 100 {}
+L 4 -150 -80 -130 -80 {}
+L 4 -150 -60 -130 -60 {}
+L 4 130 -80 150 -80 {}
+L 4 130 -60 150 -60 {}
+L 4 130 -40 150 -40 {}
+L 4 130 -20 150 -20 {}
+L 4 130 10 150 10 {}
+L 4 130 30 150 30 {}
+L 4 -150 -30 -130 -30 {}
+L 4 -150 50 -130 50 {}
+L 4 -150 70 -130 70 {}
 L 4 -150 -10 -130 -10 {}
-L 4 -150 10 -130 10 {}
-L 4 130 -10 150 -10 {}
-L 7 0 -60 0 -40 {}
-L 7 0 40 0 60 {}
-B 5 -2.5 -62.5 2.5 -57.5 {name=vdd dir=inout name=p1 }
-B 5 -152.5 -12.5 -147.5 -7.5 {name=en_n dir=in name=p6 }
-B 5 -152.5 7.5 -147.5 12.5 {name=ctl dir=in name=p3 }
-B 5 147.5 -12.5 152.5 -7.5 {name=out dir=out name=p4 }
-B 5 -2.5 57.5 2.5 62.5 {name=vss dir=inout name=p2 }
-T {@symname} 29 54 0 0 0.3 0.3 {}
-T {@name} 45 78 0 0 0.2 0.2 {}
-T {vdd} 16 -35 0 1 0.2 0.2 {}
-T {en_n} -125 -14 0 0 0.2 0.2 {}
-T {ctl} -125 6 0 0 0.2 0.2 {}
-T {out} 125 -14 0 1 0.2 0.2 {}
-T {vss} -6 35 2 1 0.2 0.2 {}
+L 7 0 -130 0 -110 {}
+L 7 0 100 0 120 {}
+B 5 -2.5 -132.5 2.5 -127.5 {name=vdd dir=inout name=p1 }
+B 5 -152.5 -82.5 -147.5 -77.5 {name=en_n dir=in name=p6 }
+B 5 -152.5 -62.5 -147.5 -57.5 {name=ctl dir=in name=p3 }
+B 5 147.5 -82.5 152.5 -77.5 {name=div_out dir=out name=p4 }
+B 5 -2.5 117.5 2.5 122.5 {name=vss dir=inout name=p2 }
+B 5 147.5 -62.5 152.5 -57.5 {name=dither_output dir=out name=p4 }
+B 5 147.5 -42.5 152.5 -37.5 {name=output_frequency dir=out name=p4 }
+B 5 147.5 -22.5 152.5 -17.5 {name=cp_out dir=out name=p4 }
+B 5 147.5 7.5 152.5 12.5 {name=rf_p dir=out name=p4 }
+B 5 147.5 27.5 152.5 32.5 {name=rf_n dir=out name=p4 }
+B 5 -152.5 -32.5 -147.5 -27.5 {name=input_frequency dir=in name=p3 }
+B 5 -152.5 47.5 -147.5 52.5 {name=bias_rf dir=in name=p3 }
+B 5 -152.5 67.5 -147.5 72.5 {name=bias_cp dir=in name=p3 }
+B 5 -152.5 -12.5 -147.5 -7.5 {name=ref_frequency dir=in name=p3 }
+T {@symname} 19 104 0 0 0.3 0.3 {}
+T {@name} 35 128 0 0 0.2 0.2 {}
+T {vdd} 16 -105 0 1 0.2 0.2 {}
+T {en_n} -125 -84 0 0 0.2 0.2 {}
+T {ctl} -125 -64 0 0 0.2 0.2 {}
+T {div_out} 125 -84 0 1 0.2 0.2 {}
+T {vss} -6 95 2 1 0.2 0.2 {}
+T {dither_output} 125 -64 0 1 0.2 0.2 {}
+T {output_frequency} 125 -44 0 1 0.2 0.2 {}
+T {cp_out} 125 -24 0 1 0.2 0.2 {}
+T {rf_p} 125 6 0 1 0.2 0.2 {}
+T {rf_n} 125 26 0 1 0.2 0.2 {}
+T {input_frequency} -125 -34 0 0 0.2 0.2 {}
+T {bias_rf} -125 46 0 0 0.2 0.2 {}
+T {bias_cp} -125 66 0 0 0.2 0.2 {}
+T {ref_frequency} -125 -14 0 0 0.2 0.2 {}
