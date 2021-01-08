@@ -50,7 +50,7 @@ xschem
 3. View layout:
 ```
 cd amsat_txrx_ic-caravel/gds
-klayout amsat_txrx_ic-caravel.gds
+klayout caravel.gds
 ```
 
 4. Run DRC:
