@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1612384210
+timestamp 1612435203
 << checkpaint >>
 rect -1260 -1260 718860 1038860
 << metal1 >>
@@ -80750,187 +80750,187 @@ rect 455254 40175 459242 40411
 rect 459478 40175 459520 40411
 rect 454976 40133 459520 40175
 use user_id_programming  user_id_value ../mag
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 656624 0 1 80926
 box 0 0 7109 7077
 use storage  storage ../mag
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 52032 0 1 53156
 box 0 0 88934 189234
 use mgmt_core  soc ../mag
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 210422 0 1 53602
 box 0 0 430000 180000
 use sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped  rstb_level ../mag
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 137896 0 -1 51956
 box -66 -83 5058 5000
 use simple_por  por ../mag
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 654176 0 -1 112880
 box 25 11 11344 8338
 use mgmt_protect  mgmt_buffers ../mag
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 212180 0 1 246848
 box -1586 -1605 201502 19557
 use gpio_control_block  gpio_control_bidir\[1\] ../mag
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 166200
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_bidir\[0\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 121000
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[36\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 245800
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[37\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 202600
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[2\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 211200
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[3\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 256400
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[33\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 375400
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[34\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 332200
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[35\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 289000
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[4\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 301400
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[5\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 346400
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[7\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 479800
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[6\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 391600
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[32\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 418600
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[31\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 546200
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[30\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 589400
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[29\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 632600
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[9\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 568800
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[8\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 523800
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[10\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 614000
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[28\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 675800
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[27\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 719000
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[26\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 762200
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[13\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 749200
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[12\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 704200
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[11\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 659000
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[25\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 805400
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[24\]
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 8567 0 1 931224
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[23\]
-timestamp 1612384210
+timestamp 1612435203
 transform 0 1 97200 -1 0 1029747
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[22\]
-timestamp 1612384210
+timestamp 1612435203
 transform 0 1 148600 -1 0 1029747
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[21\]
-timestamp 1612384210
+timestamp 1612435203
 transform 0 1 200000 -1 0 1029747
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[20\]
-timestamp 1612384210
+timestamp 1612435203
 transform 0 1 251400 -1 0 1029747
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[19\]
-timestamp 1612384210
+timestamp 1612435203
 transform 0 1 303000 -1 0 1029747
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[18\]
-timestamp 1612384210
+timestamp 1612435203
 transform 0 1 353400 -1 0 1029747
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[17\]
-timestamp 1612384210
+timestamp 1612435203
 transform 0 1 420800 -1 0 1029747
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[16\]
-timestamp 1612384210
+timestamp 1612435203
 transform 0 1 497800 -1 0 1029747
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[15\]
-timestamp 1612384210
+timestamp 1612435203
 transform 0 1 549200 -1 0 1029747
 box 0 0 33934 18344
 use gpio_control_block  gpio_control_in\[14\]
-timestamp 1612384210
+timestamp 1612435203
 transform -1 0 708537 0 1 927600
 box 0 0 33934 18344
 use user_project_wrapper  mprj ../mag
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 65308 0 1 278716
 box -8576 -7506 592500 711442
 use chip_io  padframe ../mag
-timestamp 1612384210
+timestamp 1612435203
 transform 1 0 0 0 1 0
 box 0 0 717600 1037600
 << properties >>
